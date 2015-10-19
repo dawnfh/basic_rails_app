@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get "log_out" => "sessions#new", :as => "lLog 
-  get "log_in" => "sessions#new", :as => "log_in"
+  get "log_out" => "sessions#new", :as => "logout" 
+  get "log_in" => "sessions#new", :as => "login"
   get "sign_up" => "users#new", :as => "sign_up"
   root :to => "users#new"
   resources :users 
