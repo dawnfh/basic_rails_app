@@ -13,6 +13,6 @@ class UsersController < ApplicationController
   end
 # giving rails permission for users to create these fields whitelist (ok the actions)
   def user_params
-    params.require(:user).permit(:email, :password, :password_hash, :password_salt)
+    params.require(:user).permit(:email, :password)
   end
 end
